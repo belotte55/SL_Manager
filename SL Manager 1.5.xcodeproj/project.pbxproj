@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC1E54891AD0204C00BED1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E54881AD0204C00BED1AC /* AppDelegate.swift */; };
+		BC1E548B1AD0204C00BED1AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1E548A1AD0204C00BED1AC /* Images.xcassets */; };
+		BC1E548E1AD0204C00BED1AC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1E548C1AD0204C00BED1AC /* MainMenu.xib */; };
+		BC1E549A1AD0204D00BED1AC /* SL_Manager_1_5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E54991AD0204D00BED1AC /* SL_Manager_1_5Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC1E54941AD0204D00BED1AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC1E547B1AD0204C00BED1AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC1E54821AD0204C00BED1AC;
+			remoteInfo = "SL Manager 1.5";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC1E54831AD0204C00BED1AC /* SL Manager 1.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SL Manager 1.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1E54871AD0204C00BED1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1E54881AD0204C00BED1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC1E548A1AD0204C00BED1AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC1E548D1AD0204C00BED1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BC1E54931AD0204D00BED1AC /* SL Manager 1.5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SL Manager 1.5Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1E54981AD0204D00BED1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1E54991AD0204D00BED1AC /* SL_Manager_1_5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SL_Manager_1_5Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC1E54801AD0204C00BED1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1E54901AD0204D00BED1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC1E547A1AD0204C00BED1AC = {
+			isa = PBXGroup;
+			children = (
+				BC1E54851AD0204C00BED1AC /* SL Manager 1.5 */,
+				BC1E54961AD0204D00BED1AC /* SL Manager 1.5Tests */,
+				BC1E54841AD0204C00BED1AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC1E54841AD0204C00BED1AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E54831AD0204C00BED1AC /* SL Manager 1.5.app */,
+				BC1E54931AD0204D00BED1AC /* SL Manager 1.5Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC1E54851AD0204C00BED1AC /* SL Manager 1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E54881AD0204C00BED1AC /* AppDelegate.swift */,
+				BC1E548A1AD0204C00BED1AC /* Images.xcassets */,
+				BC1E548C1AD0204C00BED1AC /* MainMenu.xib */,
+				BC1E54861AD0204C00BED1AC /* Supporting Files */,
+			);
+			path = "SL Manager 1.5";
+			sourceTree = "<group>";
+		};
+		BC1E54861AD0204C00BED1AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E54871AD0204C00BED1AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC1E54961AD0204D00BED1AC /* SL Manager 1.5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E54991AD0204D00BED1AC /* SL_Manager_1_5Tests.swift */,
+				BC1E54971AD0204D00BED1AC /* Supporting Files */,
+			);
+			path = "SL Manager 1.5Tests";
+			sourceTree = "<group>";
+		};
+		BC1E54971AD0204D00BED1AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E54981AD0204D00BED1AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC1E54821AD0204C00BED1AC /* SL Manager 1.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1E549D1AD0204D00BED1AC /* Build configuration list for PBXNativeTarget "SL Manager 1.5" */;
+			buildPhases = (
+				BC1E547F1AD0204C00BED1AC /* Sources */,
+				BC1E54801AD0204C00BED1AC /* Frameworks */,
+				BC1E54811AD0204C00BED1AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SL Manager 1.5";
+			productName = "SL Manager 1.5";
+			productReference = BC1E54831AD0204C00BED1AC /* SL Manager 1.5.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC1E54921AD0204D00BED1AC /* SL Manager 1.5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1E54A01AD0204D00BED1AC /* Build configuration list for PBXNativeTarget "SL Manager 1.5Tests" */;
+			buildPhases = (
+				BC1E548F1AD0204D00BED1AC /* Sources */,
+				BC1E54901AD0204D00BED1AC /* Frameworks */,
+				BC1E54911AD0204D00BED1AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC1E54951AD0204D00BED1AC /* PBXTargetDependency */,
+			);
+			name = "SL Manager 1.5Tests";
+			productName = "SL Manager 1.5Tests";
+			productReference = BC1E54931AD0204D00BED1AC /* SL Manager 1.5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC1E547B1AD0204C00BED1AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Belotte;
+				TargetAttributes = {
+					BC1E54821AD0204C00BED1AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					BC1E54921AD0204D00BED1AC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = BC1E54821AD0204C00BED1AC;
+					};
+				};
+			};
+			buildConfigurationList = BC1E547E1AD0204C00BED1AC /* Build configuration list for PBXProject "SL Manager 1.5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC1E547A1AD0204C00BED1AC;
+			productRefGroup = BC1E54841AD0204C00BED1AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC1E54821AD0204C00BED1AC /* SL Manager 1.5 */,
+				BC1E54921AD0204D00BED1AC /* SL Manager 1.5Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC1E54811AD0204C00BED1AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1E548B1AD0204C00BED1AC /* Images.xcassets in Resources */,
+				BC1E548E1AD0204C00BED1AC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1E54911AD0204D00BED1AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC1E547F1AD0204C00BED1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1E54891AD0204C00BED1AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1E548F1AD0204D00BED1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1E549A1AD0204D00BED1AC /* SL_Manager_1_5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC1E54951AD0204D00BED1AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC1E54821AD0204C00BED1AC /* SL Manager 1.5 */;
+			targetProxy = BC1E54941AD0204D00BED1AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC1E548C1AD0204C00BED1AC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC1E548D1AD0204C00BED1AC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC1E549B1AD0204D00BED1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC1E549C1AD0204D00BED1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BC1E549E1AD0204D00BED1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SL Manager 1.5/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC1E549F1AD0204D00BED1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SL Manager 1.5/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC1E54A11AD0204D00BED1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SL Manager 1.5Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SL Manager 1.5.app/Contents/MacOS/SL Manager 1.5";
+			};
+			name = Debug;
+		};
+		BC1E54A21AD0204D00BED1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SL Manager 1.5Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SL Manager 1.5.app/Contents/MacOS/SL Manager 1.5";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC1E547E1AD0204C00BED1AC /* Build configuration list for PBXProject "SL Manager 1.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1E549B1AD0204D00BED1AC /* Debug */,
+				BC1E549C1AD0204D00BED1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC1E549D1AD0204D00BED1AC /* Build configuration list for PBXNativeTarget "SL Manager 1.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1E549E1AD0204D00BED1AC /* Debug */,
+				BC1E549F1AD0204D00BED1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC1E54A01AD0204D00BED1AC /* Build configuration list for PBXNativeTarget "SL Manager 1.5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1E54A11AD0204D00BED1AC /* Debug */,
+				BC1E54A21AD0204D00BED1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC1E547B1AD0204C00BED1AC /* Project object */;
+}
