@@ -7,10 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC1E54891AD0204C00BED1AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E54881AD0204C00BED1AC /* AppDelegate.swift */; };
+		BC1E54891AD0204C00BED1AC /* App_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E54881AD0204C00BED1AC /* App_Delegate.swift */; };
 		BC1E548B1AD0204C00BED1AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1E548A1AD0204C00BED1AC /* Images.xcassets */; };
 		BC1E548E1AD0204C00BED1AC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1E548C1AD0204C00BED1AC /* MainMenu.xib */; };
 		BC1E549A1AD0204D00BED1AC /* SL_Manager_1_5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E54991AD0204D00BED1AC /* SL_Manager_1_5Tests.swift */; };
+		BC1E54A41AD0330A00BED1AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E54A31AD0330A00BED1AC /* main.swift */; };
+		BC2D119B1AD2FF530018D371 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC2D118A1AD2FF530018D371 /* background.jpg */; };
+		BC2D119C1AD2FF530018D371 /* icon x20.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D118B1AD2FF530018D371 /* icon x20.png */; };
+		BC2D119D1AD2FF530018D371 /* Logo rounded.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D118C1AD2FF530018D371 /* Logo rounded.png */; };
+		BC2D119E1AD2FF530018D371 /* logo x128.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D118D1AD2FF530018D371 /* logo x128.png */; };
+		BC2D119F1AD2FF530018D371 /* logo x16.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D118E1AD2FF530018D371 /* logo x16.png */; };
+		BC2D11A01AD2FF530018D371 /* logo x256.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D118F1AD2FF530018D371 /* logo x256.png */; };
+		BC2D11A11AD2FF530018D371 /* logo x32.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11901AD2FF530018D371 /* logo x32.png */; };
+		BC2D11A21AD2FF530018D371 /* logo x512.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11911AD2FF530018D371 /* logo x512.png */; };
+		BC2D11A31AD2FF530018D371 /* logo x64.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11921AD2FF530018D371 /* logo x64.png */; };
+		BC2D11A41AD2FF530018D371 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11931AD2FF530018D371 /* logo.png */; };
+		BC2D11A61AD2FF530018D371 /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11951AD2FF530018D371 /* off.png */; };
+		BC2D11A71AD2FF530018D371 /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11961AD2FF530018D371 /* on.png */; };
+		BC2D11A81AD2FF530018D371 /* Pedal.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11971AD2FF530018D371 /* Pedal.png */; };
+		BC2D11A91AD2FF530018D371 /* pedalPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11981AD2FF530018D371 /* pedalPressed.png */; };
+		BC2D11AA1AD2FF530018D371 /* remove_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D11991AD2FF530018D371 /* remove_icon.png */; };
+		BC2D11AB1AD2FF530018D371 /* remove_iconx20.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2D119A1AD2FF530018D371 /* remove_iconx20.png */; };
+		BC2D11AD1AD300D20018D371 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2D11AC1AD300D20018D371 /* Objects.swift */; };
+		BC2D11AF1AD300EA0018D371 /* Boxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2D11AE1AD300EA0018D371 /* Boxes.swift */; };
+		BC9480D01AD803DE003BF8AB /* Pedal_Accessories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9480CF1AD803DE003BF8AB /* Pedal_Accessories.swift */; };
+		BC9ED68B1AF4F3A1005B504C /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9ED68A1AF4F3A1005B504C /* Buttons.swift */; };
+		BCAF07191ADBC28000D45996 /* Loading_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF07181ADBC28000D45996 /* Loading_View.swift */; };
+		BCAF071B1ADBC47000D45996 /* Image_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF071A1ADBC47000D45996 /* Image_View.swift */; };
+		BCB1C4CF1AD1896B00C75D5E /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCB1C4CE1AD1896B00C75D5E /* Preferences.plist */; };
+		BCB51A1C1AF89DE7009FCA32 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB51A191AF89DE7009FCA32 /* ysocket.swift */; };
+		BCB51A1D1AF89DE7009FCA32 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = BCB51A1A1AF89DE7009FCA32 /* yudpsocket.c */; };
+		BCB51A1E1AF89DE7009FCA32 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB51A1B1AF89DE7009FCA32 /* yudpsocket.swift */; };
+		BCBF99B91AEBCB1500966764 /* raspi.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBF99B81AEBCB1500966764 /* raspi.png */; };
+		BCDBFF0F1AD2693600647001 /* Midi.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDBFF081AD2693600647001 /* Midi.m */; };
+		BCE20D391AFF4E0B00BDBF7C /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE20D371AFF4E0B00BDBF7C /* GCDAsyncUdpSocket.m */; };
+		BCE8C91C1AD06B61000A03BB /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8C91B1AD06B61000A03BB /* Storage.swift */; };
+		BCE8C91E1AD06C23000A03BB /* Principal_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8C91D1AD06C23000A03BB /* Principal_View.swift */; };
+		BCE8C9201AD06C2C000A03BB /* Preferences_Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8C91F1AD06C2C000A03BB /* Preferences_Views.swift */; };
+		BCE8C9221AD06CAE000A03BB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8C9211AD06CAE000A03BB /* Server.swift */; };
+		BCE8C9241AD06CB9000A03BB /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8C9231AD06CB9000A03BB /* Socket.swift */; };
+		BCE8C9261AD06CF5000A03BB /* Log_File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8C9251AD06CF5000A03BB /* Log_File.swift */; };
+		BCE8C9281AD06D09000A03BB /* Pocket_Pod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8C9271AD06D09000A03BB /* Pocket_Pod.swift */; };
+		BCEF65351AD2C1DC00F6A24D /* Pedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF65341AD2C1DC00F6A24D /* Pedal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,12 +64,53 @@
 /* Begin PBXFileReference section */
 		BC1E54831AD0204C00BED1AC /* SL Manager 1.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SL Manager 1.5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1E54871AD0204C00BED1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC1E54881AD0204C00BED1AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC1E54881AD0204C00BED1AC /* App_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Delegate.swift; sourceTree = "<group>"; };
 		BC1E548A1AD0204C00BED1AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC1E548D1AD0204C00BED1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BC1E54931AD0204D00BED1AC /* SL Manager 1.5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SL Manager 1.5Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1E54981AD0204D00BED1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1E54991AD0204D00BED1AC /* SL_Manager_1_5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SL_Manager_1_5Tests.swift; sourceTree = "<group>"; };
+		BC1E54A31AD0330A00BED1AC /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BC2D118A1AD2FF530018D371 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		BC2D118B1AD2FF530018D371 /* icon x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon x20.png"; sourceTree = "<group>"; };
+		BC2D118C1AD2FF530018D371 /* Logo rounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo rounded.png"; sourceTree = "<group>"; };
+		BC2D118D1AD2FF530018D371 /* logo x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo x128.png"; sourceTree = "<group>"; };
+		BC2D118E1AD2FF530018D371 /* logo x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo x16.png"; sourceTree = "<group>"; };
+		BC2D118F1AD2FF530018D371 /* logo x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo x256.png"; sourceTree = "<group>"; };
+		BC2D11901AD2FF530018D371 /* logo x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo x32.png"; sourceTree = "<group>"; };
+		BC2D11911AD2FF530018D371 /* logo x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo x512.png"; sourceTree = "<group>"; };
+		BC2D11921AD2FF530018D371 /* logo x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo x64.png"; sourceTree = "<group>"; };
+		BC2D11931AD2FF530018D371 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		BC2D11951AD2FF530018D371 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		BC2D11961AD2FF530018D371 /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		BC2D11971AD2FF530018D371 /* Pedal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pedal.png; sourceTree = "<group>"; };
+		BC2D11981AD2FF530018D371 /* pedalPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pedalPressed.png; sourceTree = "<group>"; };
+		BC2D11991AD2FF530018D371 /* remove_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove_icon.png; sourceTree = "<group>"; };
+		BC2D119A1AD2FF530018D371 /* remove_iconx20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove_iconx20.png; sourceTree = "<group>"; };
+		BC2D11AC1AD300D20018D371 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		BC2D11AE1AD300EA0018D371 /* Boxes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boxes.swift; sourceTree = "<group>"; };
+		BC9480CF1AD803DE003BF8AB /* Pedal_Accessories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedal_Accessories.swift; sourceTree = "<group>"; };
+		BC9ED68A1AF4F3A1005B504C /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		BCAF07181ADBC28000D45996 /* Loading_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading_View.swift; sourceTree = "<group>"; };
+		BCAF071A1ADBC47000D45996 /* Image_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image_View.swift; sourceTree = "<group>"; };
+		BCB1C4CE1AD1896B00C75D5E /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
+		BCB51A191AF89DE7009FCA32 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		BCB51A1A1AF89DE7009FCA32 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		BCB51A1B1AF89DE7009FCA32 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		BCBF99B81AEBCB1500966764 /* raspi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raspi.png; sourceTree = "<group>"; };
+		BCDBFF061AD2693600647001 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		BCDBFF081AD2693600647001 /* Midi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Midi.m; sourceTree = "<group>"; };
+		BCDBFF091AD2693600647001 /* Midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Midi.h; sourceTree = "<group>"; };
+		BCE20D371AFF4E0B00BDBF7C /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = ../../Libs/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		BCE20D381AFF4E0B00BDBF7C /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = ../../Libs/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		BCE8C91B1AD06B61000A03BB /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		BCE8C91D1AD06C23000A03BB /* Principal_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Principal_View.swift; sourceTree = "<group>"; };
+		BCE8C91F1AD06C2C000A03BB /* Preferences_Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences_Views.swift; sourceTree = "<group>"; };
+		BCE8C9211AD06CAE000A03BB /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		BCE8C9231AD06CB9000A03BB /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		BCE8C9251AD06CF5000A03BB /* Log_File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log_File.swift; sourceTree = "<group>"; };
+		BCE8C9271AD06D09000A03BB /* Pocket_Pod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pocket_Pod.swift; sourceTree = "<group>"; };
+		BCEF65341AD2C1DC00F6A24D /* Pedal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +152,18 @@
 		BC1E54851AD0204C00BED1AC /* SL Manager 1.5 */ = {
 			isa = PBXGroup;
 			children = (
-				BC1E54881AD0204C00BED1AC /* AppDelegate.swift */,
+				BC1E54A31AD0330A00BED1AC /* main.swift */,
+				BC1E54881AD0204C00BED1AC /* App_Delegate.swift */,
+				BCE8C92A1AD06D33000A03BB /* Views */,
+				BCE8C9291AD06D25000A03BB /* Connections */,
+				BCEF65361AD2C1E200F6A24D /* Items */,
+				BCE8C91B1AD06B61000A03BB /* Storage.swift */,
+				BCE8C9251AD06CF5000A03BB /* Log_File.swift */,
+				BCE8C9271AD06D09000A03BB /* Pocket_Pod.swift */,
+				BC2D11AC1AD300D20018D371 /* Objects.swift */,
+				BCDBFF051AD2691F00647001 /* Libs */,
+				BCB1C4CE1AD1896B00C75D5E /* Preferences.plist */,
+				BC2D11891AD2FF530018D371 /* Images */,
 				BC1E548A1AD0204C00BED1AC /* Images.xcassets */,
 				BC1E548C1AD0204C00BED1AC /* MainMenu.xib */,
 				BC1E54861AD0204C00BED1AC /* Supporting Files */,
@@ -104,6 +194,76 @@
 				BC1E54981AD0204D00BED1AC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC2D11891AD2FF530018D371 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF99B81AEBCB1500966764 /* raspi.png */,
+				BC2D118A1AD2FF530018D371 /* background.jpg */,
+				BC2D118B1AD2FF530018D371 /* icon x20.png */,
+				BC2D118C1AD2FF530018D371 /* Logo rounded.png */,
+				BC2D118D1AD2FF530018D371 /* logo x128.png */,
+				BC2D118E1AD2FF530018D371 /* logo x16.png */,
+				BC2D118F1AD2FF530018D371 /* logo x256.png */,
+				BC2D11901AD2FF530018D371 /* logo x32.png */,
+				BC2D11911AD2FF530018D371 /* logo x512.png */,
+				BC2D11921AD2FF530018D371 /* logo x64.png */,
+				BC2D11931AD2FF530018D371 /* logo.png */,
+				BC2D11951AD2FF530018D371 /* off.png */,
+				BC2D11961AD2FF530018D371 /* on.png */,
+				BC2D11971AD2FF530018D371 /* Pedal.png */,
+				BC2D11981AD2FF530018D371 /* pedalPressed.png */,
+				BC2D11991AD2FF530018D371 /* remove_icon.png */,
+				BC2D119A1AD2FF530018D371 /* remove_iconx20.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BCDBFF051AD2691F00647001 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBFF061AD2693600647001 /* Bridge.h */,
+				BCDBFF081AD2693600647001 /* Midi.m */,
+				BCDBFF091AD2693600647001 /* Midi.h */,
+				BCB51A191AF89DE7009FCA32 /* ysocket.swift */,
+				BCE20D371AFF4E0B00BDBF7C /* GCDAsyncUdpSocket.m */,
+				BCE20D381AFF4E0B00BDBF7C /* GCDAsyncUdpSocket.h */,
+				BCB51A1A1AF89DE7009FCA32 /* yudpsocket.c */,
+				BCB51A1B1AF89DE7009FCA32 /* yudpsocket.swift */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		BCE8C9291AD06D25000A03BB /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				BCE8C9211AD06CAE000A03BB /* Server.swift */,
+				BCE8C9231AD06CB9000A03BB /* Socket.swift */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		BCE8C92A1AD06D33000A03BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCAF07181ADBC28000D45996 /* Loading_View.swift */,
+				BCE8C91D1AD06C23000A03BB /* Principal_View.swift */,
+				BCE8C91F1AD06C2C000A03BB /* Preferences_Views.swift */,
+				BCAF071A1ADBC47000D45996 /* Image_View.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BCEF65361AD2C1E200F6A24D /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF65341AD2C1DC00F6A24D /* Pedal.swift */,
+				BC2D11AE1AD300EA0018D371 /* Boxes.swift */,
+				BC9ED68A1AF4F3A1005B504C /* Buttons.swift */,
+				BC9480CF1AD803DE003BF8AB /* Pedal_Accessories.swift */,
+			);
+			name = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,8 +346,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2D11AA1AD2FF530018D371 /* remove_icon.png in Resources */,
+				BC2D11A41AD2FF530018D371 /* logo.png in Resources */,
 				BC1E548B1AD0204C00BED1AC /* Images.xcassets in Resources */,
+				BC2D11A81AD2FF530018D371 /* Pedal.png in Resources */,
+				BC2D119D1AD2FF530018D371 /* Logo rounded.png in Resources */,
+				BC2D119B1AD2FF530018D371 /* background.jpg in Resources */,
+				BCBF99B91AEBCB1500966764 /* raspi.png in Resources */,
+				BC2D119C1AD2FF530018D371 /* icon x20.png in Resources */,
+				BC2D119E1AD2FF530018D371 /* logo x128.png in Resources */,
+				BC2D11A71AD2FF530018D371 /* on.png in Resources */,
+				BC2D11AB1AD2FF530018D371 /* remove_iconx20.png in Resources */,
+				BC2D11A01AD2FF530018D371 /* logo x256.png in Resources */,
+				BC2D11A31AD2FF530018D371 /* logo x64.png in Resources */,
 				BC1E548E1AD0204C00BED1AC /* MainMenu.xib in Resources */,
+				BCB1C4CF1AD1896B00C75D5E /* Preferences.plist in Resources */,
+				BC2D11A91AD2FF530018D371 /* pedalPressed.png in Resources */,
+				BC2D11A61AD2FF530018D371 /* off.png in Resources */,
+				BC2D119F1AD2FF530018D371 /* logo x16.png in Resources */,
+				BC2D11A11AD2FF530018D371 /* logo x32.png in Resources */,
+				BC2D11A21AD2FF530018D371 /* logo x512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +383,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1E54891AD0204C00BED1AC /* AppDelegate.swift in Sources */,
+				BC1E54A41AD0330A00BED1AC /* main.swift in Sources */,
+				BCB51A1D1AF89DE7009FCA32 /* yudpsocket.c in Sources */,
+				BC2D11AD1AD300D20018D371 /* Objects.swift in Sources */,
+				BC9ED68B1AF4F3A1005B504C /* Buttons.swift in Sources */,
+				BCE20D391AFF4E0B00BDBF7C /* GCDAsyncUdpSocket.m in Sources */,
+				BCE8C9241AD06CB9000A03BB /* Socket.swift in Sources */,
+				BCB51A1E1AF89DE7009FCA32 /* yudpsocket.swift in Sources */,
+				BCE8C9261AD06CF5000A03BB /* Log_File.swift in Sources */,
+				BC1E54891AD0204C00BED1AC /* App_Delegate.swift in Sources */,
+				BCE8C91C1AD06B61000A03BB /* Storage.swift in Sources */,
+				BC9480D01AD803DE003BF8AB /* Pedal_Accessories.swift in Sources */,
+				BCE8C91E1AD06C23000A03BB /* Principal_View.swift in Sources */,
+				BCAF07191ADBC28000D45996 /* Loading_View.swift in Sources */,
+				BCE8C9221AD06CAE000A03BB /* Server.swift in Sources */,
+				BCE8C9201AD06C2C000A03BB /* Preferences_Views.swift in Sources */,
+				BC2D11AF1AD300EA0018D371 /* Boxes.swift in Sources */,
+				BCE8C9281AD06D09000A03BB /* Pocket_Pod.swift in Sources */,
+				BCB51A1C1AF89DE7009FCA32 /* ysocket.swift in Sources */,
+				BCEF65351AD2C1DC00F6A24D /* Pedal.swift in Sources */,
+				BCDBFF0F1AD2693600647001 /* Midi.m in Sources */,
+				BCAF071B1ADBC47000D45996 /* Image_View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +519,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Socket_Framework-cqsfgfpwmvqwyhfqsorjvbnsyrhp/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = "SL Manager 1.5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SL Manager 1.5/Bridge.h";
 			};
 			name = Debug;
 		};
@@ -332,9 +536,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Socket_Framework-cqsfgfpwmvqwyhfqsorjvbnsyrhp/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = "SL Manager 1.5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SL Manager 1.5/Bridge.h";
 			};
 			name = Release;
 		};
@@ -393,6 +603,7 @@
 				BC1E549F1AD0204D00BED1AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC1E54A01AD0204D00BED1AC /* Build configuration list for PBXNativeTarget "SL Manager 1.5Tests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +612,7 @@
 				BC1E54A21AD0204D00BED1AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
