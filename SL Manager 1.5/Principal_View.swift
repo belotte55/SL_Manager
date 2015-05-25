@@ -219,7 +219,8 @@ class Principal_View: NSView {
 			break
 			/* Preferences */
 		case 2:
-			self.delegate.display_preferences_pane()
+			//self.delegate.display_preferences_pane()
+			NSNotificationCenter.defaultCenter().postNotificationName("display_preferences_pane", object: self.delegate)
 			break
 		default:
 			break

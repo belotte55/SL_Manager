@@ -39,12 +39,15 @@ class App_Delegate: NSObject, NSApplicationDelegate {
 	/* # OTHERS */
 	
 	var log_file: Log_File?
-	let pocket_pod: Pocket_Pod = Pocket_Pod(name: "Line 6 Pocket POD")
-	
+	var pocket_pod: Pocket_Pod?
+	let notification_center: NSNotificationCenter = NSNotificationCenter.defaultCenter()
 	
 	/*		NOTIFIED METHODS		*/
 	func applicationDidFinishLaunching(notification: NSNotification) {
 		self.init_windows()
+		
+		self.notification_center.addObserver(self, selector: "display_preferences_pane", name: "display_preferences_pane", object: nil)
+		self.notification_center.addObserver(self, selector: "resize_preferences_window:", name: "resize_preferences_window", object: nil)
 		
 		/* The loading view is initialized first, to be displayed while storage is loading */
 		self.init_loading_view()
@@ -58,12 +61,11 @@ class App_Delegate: NSObject, NSApplicationDelegate {
 		/* All is ok, application get launched */
 		log("Launched.")
 		
-		observe_for_notification(receiver: self, selector: "toto:", name: "notif")
-	}
-	
-	func toto(notif: NSNotification) {
-		println("Ok")
-		println(notif.object)
+		self.pocket_pod = Pocket_Pod(name: "Line 6 Pocket POD")
+		
+		if self.storage!.document!["Settings"]!["Send_At_Launch"]! as! Bool {
+			self.send_all()
+		}
 	}
 	
 	func applicationWillTerminate(aNotification: NSNotification) {
@@ -225,7 +227,6 @@ class App_Delegate: NSObject, NSApplicationDelegate {
 		}
 		
 		self.socket?.send("new_host \(ip) \(port)")
-		println("new_host \(ip) \(port)")
 		self.server = Server(delegate: self, ip: ip, port: port)
 	}
 	
@@ -233,14 +234,14 @@ class App_Delegate: NSObject, NSApplicationDelegate {
 		println(trame)
 		switch trame {
 		case "Next":
-			self.pocket_pod.next()
+			self.pocket_pod?.next()
 			break
 		case "Prev":
-			self.pocket_pod.prev()
+			self.pocket_pod?.prev()
 			break
 		case "Go_To":
 			let value: Int = self.storage!.document!["Pedals"]![(self.principal_window!.contentView as! Principal_View).pedal_selected!.name]!?.valueForKey("Go_To_Value") as! Int
-			self.pocket_pod.go_to(value)
+			self.pocket_pod?.go_to(value)
 			break
 		default:
 			break
@@ -287,10 +288,12 @@ class App_Delegate: NSObject, NSApplicationDelegate {
 		}
 	}
 	
-	func resize_preferences_window(label: String) {
+	func resize_preferences_window(notif: NSNotification?) {
+		let label: String = notif!.userInfo!["Label"] as! String
+		
 		let general_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 400, height: 120))
 		let connection_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 500, height: 110))
-		let raspberry_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 350, height: 120))
+		//let raspberry_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 350, height: 120))
 		let about_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 400, height: 200))
 		
 		let frame: NSRect
@@ -302,9 +305,9 @@ class App_Delegate: NSObject, NSApplicationDelegate {
 		case "Connection":
 			frame = connection_tab_view_frame
 			break
-		case "Raspberry":
-			frame = raspberry_tab_view_frame
-			break
+		//case "Raspberry":
+		//	frame = raspberry_tab_view_frame
+		//	break
 		case "About":
 			frame = about_tab_view_frame
 			break
@@ -314,5 +317,20 @@ class App_Delegate: NSObject, NSApplicationDelegate {
 		}
 
 		self.preferences_window!.setFrame(frame, display: true, animate: true)
+	}
+	
+	func send_all() {
+		var trame: String = "Set_All"
+		
+		for i in 0..<5 {
+			let actions: NSDictionary = self.storage?.document?.objectForKey("Pedals")?.objectForKey("Pedal_\(i)")?.objectForKey("Actions") as! NSDictionary
+			let simple: Int = actions.valueForKey("Simple_Press") as! Int
+			let double: Int = actions.valueForKey("Double_Press") as! Int
+			let long: Int = actions.valueForKey("Long_Press") as! Int
+		
+			trame = "\(trame) \(simple) \(double) \(long)"
+		}
+		
+		self.socket?.send(trame)
 	}
 }

@@ -17,12 +17,12 @@ class Preferences_View: NSTabView, NSTabViewDelegate {
 	let general_tab: NSTabViewItem
 	let connection_tab: NSTabViewItem
 	let about_tab: NSTabViewItem
-	let raspberry_tab: NSTabViewItem
+	//let raspberry_tab: NSTabViewItem
 	
 	let general_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 100, height: 120))
 	let connection_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 150, height: 140))
 	let about_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 200, height: 100))
-	let raspberry_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 200, height: 100))
+	//let raspberry_tab_view_frame: NSRect = NSRect(origin: default_origin, size: NSSize(width: 200, height: 100))
 	
 	var is_first_tab: Bool = true
 	
@@ -36,14 +36,11 @@ class Preferences_View: NSTabView, NSTabViewDelegate {
 		self.general_tab = NSTabViewItem(identifier: delegate)
 		self.connection_tab = NSTabViewItem(identifier: delegate)
 		self.about_tab = NSTabViewItem(identifier: delegate)
-		self.raspberry_tab = NSTabViewItem(identifier: delegate)
+		//self.raspberry_tab = NSTabViewItem(identifier: delegate)
 		
 		self.need_to_reload = ["Buttons": false, "Socket": false, "Server": false]
 		
 		super.init(frame: frame)
-		
-//		self.new_storage.document!["Connection"]!.setValue("toto", forKey: "Port_Client")
-//		println(self.app_delegate.storage!.document!["Connection"]!["Port_Client"])
 		
 		self.delegate = self
 		
@@ -55,15 +52,15 @@ class Preferences_View: NSTabView, NSTabViewDelegate {
 		self.connection_tab.label = "Connection"
 		self.connection_tab.view = Connection_View(frame: self.connection_tab_view_frame, delegate: self)
 		
-		self.raspberry_tab.label = "Raspberry"
-		self.raspberry_tab.view = Raspberry_View(frame: self.raspberry_tab_view_frame, delegate: self)
+		//self.raspberry_tab.label = "Raspberry"
+		//self.raspberry_tab.view = Raspberry_View(frame: self.raspberry_tab_view_frame, delegate: self)
 		
 		self.about_tab.label = "About"
 		self.about_tab.view = About_View(frame: self.about_tab_view_frame, delegate: self)
 		
 		self.addTabViewItem(self.general_tab)
 		self.addTabViewItem(self.connection_tab)
-		self.addTabViewItem(self.raspberry_tab)
+		//self.addTabViewItem(self.raspberry_tab)
 		self.addTabViewItem(self.about_tab)
 	}
 	
@@ -106,10 +103,10 @@ class Preferences_View: NSTabView, NSTabViewDelegate {
 
 	func tabView(tabView: NSTabView, willSelectTabViewItem tabViewItem: NSTabViewItem?) {
 		if self.is_first_tab {
-			self.app_delegate.resize_preferences_window("First")
+			NSNotificationCenter.defaultCenter().postNotificationName("resize_preferences_window", object: self.app_delegate, userInfo: ["Label": "First"])
 			self.is_first_tab = false
 		} else {
-			self.app_delegate.resize_preferences_window(tabViewItem!.label)
+			NSNotificationCenter.defaultCenter().postNotificationName("resize_preferences_window", object: self.app_delegate, userInfo: ["Label": tabViewItem!.label])
 		}
 	}
 }
@@ -131,7 +128,7 @@ class General_View: NSView {
 		
 		self.buttons.append(Button(title: "Load", action_id: 2, target: self, action: "load:", frame: NSRect(x: 5, y: 28, width: 75, height: 45)))
 		self.buttons.append(Button(title: "Save To", action_id: 3, target: self, action: "save_to:", frame: NSRect(x: 85, y: 28, width: 75, height: 45)))
-		self.buttons.append(Button(title: "Send All", action_id: 4, target: self, action: "sendAll", frame: NSRect(x: 5, y: 0, width: 155, height: 25)))
+		self.buttons.append(Button(title: "Send All", action_id: 4, target: self.delegate.app_delegate, action: "send_all", frame: NSRect(x: 5, y: 0, width: 155, height: 25)))
 		
 		self.check_boxs.append(Button(title: "Save all when quit.", action_id: 0, target: self, action: "", frame: NSRect(x: 170, y: 50, width: 160, height: 20)))
 		self.check_boxs.append(Button(title: "Send all at launch.", action_id: 1, target: self, action: "", frame: NSRect(x: 170, y: 30, width: 160, height: 20)))
@@ -233,21 +230,24 @@ class Connection_View: NSView {
 	var ip_labels: [NSTextField] = []
 	var port_labels: [NSTextField] = []
 	
-	var radios: Radio_Matrix?
+	var reboot_button: Button?
+	var halt_button: Button?
+	
+	let image_view: Image_View = Image_View(frame: NSRect(x: 0, y: 0, width: 60, height: 60), image_name: "raspi.png")
 	
 	init(frame: NSRect, delegate: Preferences_View) {
 		self.delegate = delegate
 		
 		super.init(frame: frame)
 		
-		self.ip_labels.append(Label(text: "IP", frame: NSRect(x: 0, y: 25, width: 50, height: 20)))
-		self.ip_labels.append(Input(frame: NSRect(x: 40, y: 25, width: 100, height: 20), action_id: 0))
+		self.ip_labels.append(Label(text: "IP", frame: NSRect(x: 75, y: 25, width: 50, height: 20)))
+		self.ip_labels.append(Input(frame: NSRect(x: 105, y: 25, width: 100, height: 20), action_id: 0))
 		self.ip_labels[1].target = self.delegate
 		self.ip_labels[1].action = ""
 		self.ip_labels[1].stringValue = self.delegate.new_storage.document!["Connection"]!["IP_Client"] as! String
 		
-		self.port_labels.append(Label(text: "Port", frame: NSRect(x: 0, y: 0, width: 50, height: 20)))
-		self.port_labels.append(Input(frame: NSRect(x: 40, y: 0, width: 100, height: 20), action_id: 1))
+		self.port_labels.append(Label(text: "Port", frame: NSRect(x: 75, y: 0, width: 50, height: 20)))
+		self.port_labels.append(Input(frame: NSRect(x: 105, y: 0, width: 100, height: 20), action_id: 1))
 		self.port_labels[1].target = self.delegate
 		self.port_labels[1].action = ""
 		self.port_labels[1].stringValue = self.delegate.new_storage.document!["Connection"]!["Port_Client"] as! String
@@ -260,32 +260,13 @@ class Connection_View: NSView {
 			self.addSubview(label)
 		}
 		
-		self.radios = Radio_Matrix()
+		self.addSubview(self.image_view)
 		
-//		let ips: [String] = NSHost.currentHost().addresses as! [String]
-//		var current_ip_not_found: Bool = true
-//		
-//		for i in 0..<ips.count {
-//			if ips[i].componentsSeparatedByString(".").count == 4 {
-//				self.radios!.new_radio(ips[i] as String)
-//				
-//				if ips[i] == self.delegate.new_storage.get_ip_server() {
-//					self.radios!.changed(self.radios!.matrix.last!)
-//					current_ip_not_found = false
-//				}
-//			}
-//		}
-//		
-//		if current_ip_not_found {
-//			self.radios!.changed(self.radios!.matrix.last!)
-//		}
+		self.reboot_button = Button(title: "Reboot", action_id: -1, target: self, action: "reboot", frame: NSRect(x: 235, y: 31, width: 100, height: 30))
+		self.halt_button = Button(title: "Halt", action_id: -1, target: self, action: "halt", frame: NSRect(x: 235, y: 0, width: 100, height: 30))
 		
-		for radio in self.radios!.matrix {
-			self.addSubview(radio)
-		}
-		
-		self.addSubview(Label(text: "Raspberry", frame: NSRect(x: 0, y: 45, width: 100, height: 20)))
-		self.addSubview(Label(text: "Mac", frame: NSRect(x:160, y: 45, width: 100, height: 20)))
+		self.addSubview(reboot_button!)
+		self.addSubview(halt_button!)
 		
 		self.addSubview(Apply_Button(x: 100))
 		self.addSubview(Cancel_Button(x: 100))
@@ -300,6 +281,16 @@ class Connection_View: NSView {
 		self.delegate.new_storage.set_port_client(self.port_labels[1].stringValue)
 		
 		//self.delegate.new_storage.set_ip_server(self.radios!.radio_selected!.title)
+	}
+	
+	func reboot() {
+		(NSApplication.sharedApplication().delegate as! App_Delegate).socket?.send("Reboot")
+		(NSApplication.sharedApplication().delegate as! App_Delegate).close_preferences_pane(reboot_button!)
+	}
+	
+	func halt() {
+		(NSApplication.sharedApplication().delegate as! App_Delegate).socket?.send("Halt")
+		(NSApplication.sharedApplication().delegate as! App_Delegate).close_preferences_pane(halt_button!)
 	}
 }
 
@@ -327,16 +318,6 @@ class Raspberry_View: NSView {
 	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
-	}
-	
-	func reboot() {
-		(NSApplication.sharedApplication().delegate as! App_Delegate).socket?.send("Reboot")
-		(NSApplication.sharedApplication().delegate as! App_Delegate).close_preferences_pane(reboot_button!)
-	}
-	
-	func halt() {
-		(NSApplication.sharedApplication().delegate as! App_Delegate).socket?.send("Halt")
-		(NSApplication.sharedApplication().delegate as! App_Delegate).close_preferences_pane(halt_button!)
 	}
 }
 

@@ -25,11 +25,13 @@ class Pocket_Pod {
 	
 	let number_of_devices: Int = Int(MIDIGetNumberOfDevices())
 	
-	init(name: String) {
-		self.change_name(name)
+	init?(name: String) {
+		if !self.change_name(name) {
+			return nil
+		}
 	}
 	
-	func change_name(name: String) {
+	func change_name(name: String) -> Bool {
 		self.device_name = name
 		
 		MIDIClientCreate("client", nil, nil, &client)
@@ -54,12 +56,15 @@ class Pocket_Pod {
 		
 		if self.device_reference == nil {
 			log("\(name) not found.")
+			return false
 		} else {
 			self.entity = MIDIDeviceGetEntity(self.device_reference!, 0)
 			self.source = MIDIEntityGetSource(self.entity!, 0)
 			
 			MIDIPortConnectSource(self.iPort, self.source!, nil)
 		}
+		
+		return true
 	}
 	
 	func send_value(value:Int) {

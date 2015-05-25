@@ -58,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SL Manager 1.5/App_Delegate.swift"
-            timestampString = "452091935.810389"
+            timestampString = "454238277.706838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "init_loading_view()"
-            landmarkType = "5">
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "App_Delegate"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SL Manager 1.5/Preferences_Views.swift"
-            timestampString = "451660011.545306"
+            timestampString = "454087887.448936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "General_View"
             landmarkType = "3">
             <Locations>
@@ -199,11 +199,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SL Manager 1.5/Preferences_Views.swift"
-            timestampString = "451660011.545306"
+            timestampString = "454087887.448936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "did_appear()"
             landmarkType = "5">
          </BreakpointContent>
